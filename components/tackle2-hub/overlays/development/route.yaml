@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: tackle2-hub
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: tackle2-hub
+    app.kubernetes.io/part-of: tackle2-ui
+  name: tackle2-hubltub
+spec:
+  port:
+    targetPort: 8
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: tackle2-hub
+    weight: 100
+status: {}
