@@ -11,8 +11,8 @@ metadata:
   name: tackle2-hub
 spec:
   ports:
-  - port: 8
-    targetPort: 8
+  - port: 8080
+    targetPort: 8080
   selector:
     app.kubernetes.io/instance: tackle2-hub
 status:
