@@ -11,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/shawnhurley-tenant/tackle2-ui/tackle2-hub@sha256:3619354fd6e109818f95da40160c86b14d19c68b3a6efd7cf2b7ba1cec84b6fb
+      - image: quay.io/redhat-user-workloads/shawnhurley-tenant/tackle2-ui/tackle2-hub@sha256:e3785133d8c9548a1d1c5ba48d75c130808028f8bdd7a012c68f597ef5ce2d70
         name: container-image
         resources: {}
 status: {}
